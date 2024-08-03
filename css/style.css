@@ -22,14 +22,6 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -41,6 +33,118 @@ h1 {
   padding: 2rem;
   text-align: center;
 }
+
+/* ========== Start of new styles for CV ========== */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#cv {
+  max-width: 595px;
+  width: 100%;
+  max-height: 842px;
+  margin: auto;
+  padding: 15px 20px;
+  display: grid;
+  background-color: #ffffff;
+
+  border: 1px solid red;
+}
+
+#top {
+  max-width: 555px;
+  width: 100%;
+  max-height: 124px;
+  display: flex;
+
+  border: 1px solid blue;
+}
+#img {
+  max-width: 124px;
+  width: 100%;
+  max-height: 124px;
+  border-radius: 12px;
+}
+#name {
+  max-width: 124px;
+  width: 100%;
+  max-height: 124px;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  margin: 0px 20px;
+}
+#languages {
+  max-width: 267px;
+  width: 100%;
+  max-height: 124px;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+}
+
+#middle {
+  max-width: 555px;
+  width: 100%;
+  max-height: 359px;
+  margin: 20px 0;
+  display: flex;
+  
+  border: 1px solid green;
+}
+#experience {
+  max-width: 411px;
+  width: 100%;
+  max-height: 359px;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  margin-right: 20px;
+}
+#tools {
+  max-width: 124px;
+  width: 100%;
+  max-height: 359px;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+}
+
+#bottom {
+  max-width: 555px;
+  width: 100%;
+  max-height: 289px;
+  display: flex;
+  
+  border: 1px solid black;
+}
+#education {
+  max-width: 268px;
+  width: 100%;
+  max-height: 289px;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  margin-right: 20px;
+}
+#interests {
+  max-width: 267px;
+  width: 100%;
+  max-height: 177px;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+/* ========== END CV ========== */
 
 .logo {
   height: 6em;
