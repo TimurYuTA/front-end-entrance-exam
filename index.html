@@ -2,11 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CV V1</title>
   </head>
   <body>
+    <!--Основной блок резюме-->
+    <div id="cv">
+
+      <!--Верхний подблок основного блока-->
+      <div id="top">
+        <div id="img">
+          <img src="profileImg.svg" alt="foto" />
+        </div>
+        <section id="name"></section>
+        <section id="languages"></section>
+      </div>
+
+      <!--Средний подблок основного блока-->
+      <div id="middle">
+        <section id="experience"></section>
+        <section id="tools"></section>
+      </div>
+
+      <!--Нижний подблок основного блока-->
+      <div id="bottom">
+        <section id="education"></section>
+        <section id="interests"></section>
+        <footer></footer>
+      </div>
+      
+    </div>
     <div id="app"></div>
     <script type="module" src="./js/main.js"></script>
   </body>
