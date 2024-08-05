@@ -7,34 +7,11 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  font-synthesis: none;
+  /* font-synthesis: none; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-/* ========== Start of new styles for CV ========== */
 
 html {
   box-sizing: border-box;
@@ -45,6 +22,9 @@ html {
 }
 
 body {
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: #000000;
   margin: 0;
   display: grid;
   place-items: center;
@@ -55,13 +35,10 @@ body {
 #cv {
   max-width: 595px;
   width: 100%;
-  max-height: 842px;
-  margin: auto;
+  margin: 50px auto;
   padding: 15px 20px;
   display: grid;
   background-color: #ffffff;
-
-  border: 1px solid red;
 }
 
 #top {
@@ -69,8 +46,6 @@ body {
   width: 100%;
   max-height: 124px;
   display: flex;
-
-  border: 1px solid blue;
 }
 #img {
   max-width: 124px;
@@ -78,13 +53,14 @@ body {
   max-height: 124px;
   border-radius: 12px;
 }
-#name {
+#namebox {
   max-width: 124px;
   width: 100%;
   max-height: 124px;
   border-radius: 12px;
   background-color: #f0f0f0;
   margin: 0px 20px;
+  padding: 12px;
 }
 #languages {
   max-width: 267px;
@@ -92,6 +68,26 @@ body {
   max-height: 124px;
   border-radius: 12px;
   background-color: #f0f0f0;
+  padding: 12px;
+}
+#langlavel {
+  max-width: 243px;
+  width: 100%;
+  max-height: 53px;
+  margin-top: 16px;
+  font-size: 10px;
+  display: flex;
+}
+#landblock {
+  max-width: 58px;
+  width: 100%;
+  max-height: 50px;
+  margin-right: 17px;
+}
+#levelblock {
+  max-width: 168px;
+  width: 100%;
+  max-height: 53px;
 }
 
 #middle {
@@ -100,8 +96,6 @@ body {
   max-height: 359px;
   margin: 20px 0;
   display: flex;
-  
-  border: 1px solid green;
 }
 #experience {
   max-width: 411px;
@@ -109,7 +103,31 @@ body {
   max-height: 359px;
   border-radius: 12px;
   background-color: #f0f0f0;
+  padding: 12px;
   margin-right: 20px;
+}
+#joblist {
+  max-width: 387px;
+  width: 100%;
+  max-height: 300px;
+  margin-top: 16px;
+}
+#lastjob {
+  max-width: 387px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #28d979;
+  color: #ffffff;
+}
+#anyjob {
+  max-width: 387px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 8px;
+  background-color: #ffffff;
+  color: #000000;
 }
 #tools {
   max-width: 124px;
@@ -117,6 +135,12 @@ body {
   max-height: 359px;
   border-radius: 12px;
   background-color: #f0f0f0;
+  padding: 12px;
+}
+#toolsblock {
+  max-width: 76px;
+  width: 100%;
+  margin: 15px 0px 0px 12px;
 }
 
 #bottom {
@@ -124,8 +148,6 @@ body {
   width: 100%;
   max-height: 289px;
   display: flex;
-  
-  border: 1px solid black;
 }
 #education {
   max-width: 268px;
@@ -134,6 +156,7 @@ body {
   border-radius: 12px;
   background-color: #f0f0f0;
   margin-right: 20px;
+  padding: 12px;
 }
 #interests {
   max-width: 267px;
@@ -142,30 +165,225 @@ body {
   border-radius: 12px;
   background-color: #f0f0f0;
   margin-bottom: 20px;
+  padding: 12px;
+}
+#educationblock {
+  max-width: 248px;
+  width: 100%;
+  max-height: 228px;
+  display: grid;
+  grid-template-columns: repeat(2, 116px);
+  gap: 12px;
+}
+#oneblockedu {
+  max-width: 116px;
+  width: 100%;
+  max-height: 120px;
+  padding: 8px;
+  margin-top: 16px;
+  border-radius: 10px;
+  background-color: #28d979;
+  color: #ffffff;
+}
+#twoblockedu {
+  max-width: 116px;
+  width: 100%;
+  max-height: 108px;
+  padding: 8px;
+  margin-top: 16px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+}
+#treeblockedu {
+  max-width: 116px;
+  width: 100%;
+  max-height: 96px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+}
+#lastblocks {
+  max-width: 267px;
+  width: 100%;
+  max-height: 289px;
 }
 
-/* ========== END CV ========== */
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+div.greating {
+  font-size: 10px;
+  margin-bottom: 46px;
+  max-height: 96px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+div.name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
 }
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
+div.role {
+  font-size: 12px;
+  color: #5c5c5c;
 }
 
-.read-the-docs {
-  color: #888;
+.header {
+  font-size: 14px;
+  margin: 0;
 }
+.p {
+  margin: 0;
+  box-sizing: content-box;
+  max-height: 10px;
+}
+.pmid {
+  box-sizing: content-box;
+  max-height: 10px;
+  margin: 10px 0px;
+}
+.level {
+  max-height: 11px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background-color: #28d979;
+  color: #28d979;
+}
+.levelhindi {
+  max-width: 129px;
+  width: 100%;
+  max-height: 11px;
+  border-radius: 3px;
+  background-color: #28d979;
+  color: #28d979;
+}
+.jobtop {
+  max-width: 371px;
+  width: 100%;
+  max-height: 16px;
+  font-size: 8px;
+  display: flex;
+}
+.ptop {
+  margin: 2px 0px;
+}
+.mosttag {
+  width: fit-content;
+  padding: 0px 6px;
+  margin-left: auto;
+  border-radius: 59px;
+  background-color: rgba(126, 115, 18, 0.4);
+  color: #ddf163;
+}
+.jobcontent {
+  max-width: 371px;
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+}
+.jobrole {
+  max-width: 124px;
+  width: 100%;
+  margin-right: 8px;
+}
+.jobheader {
+  font-size: 10px;
+  margin: 0;
+}
+.pjoblast {
+  font-size: 8px;
+  font-weight: 400;
+  margin: 0;
+  color: #ebf9f2;
+}
+.pjob {
+  font-size: 8px;
+  font-weight: 400;
+  margin: 0;
+  color: #3f3d3d;
+}
+.jobpoints {
+  max-width: 239px;
+  width: 100%;
+  font-size: 8px;
+  font-weight: 400;
+  text-align: left;
+}
+.uljob {
+  margin: 0;
+  padding-left: 12px;
+}
+.black {
+  color: #000000;
+}
+.designtools {
+  max-width: 76px;
+  width: 100%;
+  max-height: 111.48px;
+  border-radius: 6px;
+  padding: 0px 4px 11px 4px;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+}
+.table {
+  max-width: 76px;
+  width: 100%;
+  text-align: center;
+}
+.caption {
+  position: relative;
+  bottom: 6px;
+}
+.toolstag {
+  width: fit-content;
+  padding: 2px 6px;
+  margin: auto;
+  border-radius: 59px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 5px;
+  text-align: center;
+  position: relative;
+}
+.topblockedu {
+  max-width: 100px;
+  width: 100%;
+  max-height: 15px;
+  font-size: 10px;
+  margin-bottom: 8px;
+  vertical-align: middle;
+  display: flex;
+}
+.heart {
+  margin-top: 4px;
+  margin-left: auto;
+}
+.schoolgreen {
+  font-size: 8px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.hashedu {
+  font-size: 8px;
+  font-weight: 400;
+  margin: 0;
+  color: #149063;
+}
+.interestsblock {
+  max-width: 243px;
+  width: 100%;
+  max-height: 116px;
+  margin-top: 16px;
+  display: run-in;
+}
+.tags {
+  width: fit-content;
+  border-radius: 40px;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 4px 10px;
+  margin: 4px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
 
 button {
   border-radius: 8px;
