@@ -1,223 +1,302 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>CV V1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   </head>
   <body>
-    <!--Основной блок резюме-->
+    <header>
+      <div class="headerarea">
+        <button onclick="generatePDF()">Download PDF</button>
+        <div class="line"></div>
+      </div>
+    </header>
     <div id="cv">
-      <!--Верхний подблок основного блока-->
-      <div id="top">
-        <div id="img">
-          <img src="profileImg.svg" alt="foto" />
-        </div>
-        <section id="namebox">
-          <div class="greating" contenteditable="true">Hello 👋🏻 I’m</div>
-          <div class="name" contenteditable="true">Karthik SR</div>
-          <div class="role" contenteditable="true">UX/UI Designer</div>
-        </section>
-        <section id="languages">
-          <h1 class="header" contenteditable="true">Languages</h1>
-          <div id="langlavel">
-            <div id="landblock">
-              <p class="p" contenteditable="true">English</p>
-              <p class="pmid" contenteditable="true">Malayalam</p>
-              <p class="p" contenteditable="true">Hindi</p>
+      <div id="contentPdf">
+        <main>
+          <div id="top">
+            <div id="img">
+              <img src="profileImg.svg" alt="foto" />
             </div>
-            <div id="levelblock">
-              <div class="level"></div>
-              <div class="level"></div>
-              <div class="levelhindi"></div>
+            <div id="namebox">
+              <div class="greating" contenteditable="true">Hello 👋🏻 I’m</div>
+              <div class="name" contenteditable="true">Karthik SR</div>
+              <div class="role" contenteditable="true">UX/UI Designer</div>
+            </div>
+            <section id="languages">
+              <h1 class="header" contenteditable="true">Languages</h1>
+              <div id="langlavel">
+                <div id="landblock">
+                  <p class="p" contenteditable="true">English</p>
+                  <p class="pmid" contenteditable="true">Malayalam</p>
+                  <p class="p" contenteditable="true">Hindi</p>
+                </div>
+                <div id="levelblock">
+                  <div class="level"></div>
+                  <div class="level"></div>
+                  <div class="levelhindi"></div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div id="middle">
+            <section id="experience">
+              <h1 class="header" contenteditable="true">Experience</h1>
+              <div id="joblist">
+                <div id="lastjob">
+                  <div class="jobtop">
+                    <p class="ptop" contenteditable="true">
+                      Jun. 2023 - Present
+                    </p>
+                    <div class="mosttag">
+                      <p class="ptop" contenteditable="true">most recent</p>
+                    </div>
+                  </div>
+                  <article class="jobcontent">
+                    <div class="jobrole">
+                      <h2 class="jobheader" contenteditable="true">
+                        Marketing Manager
+                      </h2>
+                      <p class="pjoblast" contenteditable="true">
+                        Pankayam&nbsp;&nbsp;|&nbsp;&nbsp;Full-time
+                      </p>
+                    </div>
+                    <div class="jobpoints">
+                      <ul class="uljob" contenteditable="true">
+                        <li>
+                          Strategy development and planning of campaigns that
+                          promote the business and generate genuine traffic
+                        </li>
+                        <li>
+                          SEO Content Creation for Blogs, Website, Social media
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="anyjob">
+                  <div class="jobtop">
+                    <p class="ptop" contenteditable="true">2017 - Present</p>
+                  </div>
+                  <article class="jobcontent">
+                    <div class="jobrole">
+                      <h2 class="jobheader" contenteditable="true">
+                        Graphic / Web designer
+                      </h2>
+                      <p class="pjob" contenteditable="true">Freelance</p>
+                    </div>
+                    <div class="jobpoints">
+                      <ul class="uljob" contenteditable="true">
+                        <li>
+                          Development of internal projects from scratch, product
+                          design of brands
+                        </li>
+                        <li>Landing page, webapps and hybrid apps</li>
+                        <li>
+                          Coordinating with outside agencies, art services, web
+                          designer, marketing, printers, and colleagues as
+                          necessary.
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="anyjob">
+                  <div class="jobtop">
+                    <p class="ptop" contenteditable="true">
+                      Sep. 2021 - Jun. 2023
+                    </p>
+                  </div>
+                  <article class="jobcontent">
+                    <div class="jobrole">
+                      <h2 class="jobheader" contenteditable="true">
+                        Legal Assistant
+                      </h2>
+                      <p class="pjob" contenteditable="true">
+                        Law Firm<span class="black"
+                          >&nbsp;&nbsp;|&nbsp;&nbsp;</span
+                        >Intern
+                      </p>
+                    </div>
+                    <div class="jobpoints">
+                      <ul class="uljob" contenteditable="true">
+                        <li>
+                          Provide administrative support to lawyer and enhance
+                          office effectiveness
+                        </li>
+                        <li>
+                          Handle communication with clients, witnesses etc.
+                        </li>
+                        <li>
+                          repare case briefs and summarize depositions,
+                          interrogatories and testimony
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+            <section id="tools">
+              <h1 class="header" contenteditable="true">Tools</h1>
+              <div id="toolsblock">
+                <div class="designtools">
+                  <table class="table">
+                    <caption class="caption">
+                      <div class="toolstag" contenteditable="true">design</div>
+                    </caption>
+                    <tr>
+                      <td><img src="img/figma.svg" alt="figma" /></td>
+                      <td><img src="img/photoshop.svg" alt="photoshop" /></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="img/illustrator.svg" alt="illustrator" />
+                      </td>
+                      <td><img src="img/premiere.svg" alt="premiere" /></td>
+                    </tr>
+                    <tr>
+                      <td><img src="img/notion.svg" alt="notion" /></td>
+                      <td><img src="img/meet.svg" alt="meet" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="designtools">
+                  <table class="table">
+                    <caption class="caption">
+                      <div class="toolstag" contenteditable="true">no-code</div>
+                    </caption>
+                    <tr>
+                      <td><img src="img/zapier.svg" alt="zapier" /></td>
+                      <td><img src="img/webflow.svg" alt="webflow" /></td>
+                    </tr>
+                    <tr>
+                      <td><img src="img/framer.svg" alt="framer" /></td>
+                      <td><img src="img/wordpress.svg" alt="wordpress" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="designtools">
+                  <table class="table">
+                    <caption class="caption">
+                      <div class="toolstag" contenteditable="true">
+                        artoficial intelligence
+                      </div>
+                    </caption>
+                    <tr>
+                      <td><img src="img/chatgpt.svg" alt="chatgpt" /></td>
+                      <td><img src="img/copilot.svg" alt="copilot" /></td>
+                    </tr>
+                    <tr>
+                      <td><img src="img/midjourney.svg" alt="midjourney" /></td>
+                      <td>
+                        <img src="img/midjourney3.svg" alt="midjourney3" />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div id="bottom">
+            <section id="education">
+              <h1 class="header" contenteditable="true">Education</h1>
+              <div id="educationblock">
+                <div id="oneblockedu">
+                  <div class="topblockedu">
+                    <p class="ptop" contenteditable="true">2023</p>
+                    <span class="heart"
+                      ><img src="img/heart.svg" alt="heart"
+                    /></span>
+                  </div>
+                  <article>
+                    <h2 class="jobheader" contenteditable="true">UI/UX</h2>
+                    <p class="pjoblast" contenteditable="true">
+                      #UX #UI #research #DesignSystem #Ui #wireframing #figma
+                      #Ux
+                    </p>
+                    <p class="schoolgreen" contenteditable="true">Coursera</p>
+                  </article>
+                </div>
+                <div id="twoblockedu">
+                  <div class="topblockedu">
+                    <p class="ptop" contenteditable="true">2017 - 2022</p>
+                    <span class="heart"
+                      ><img src="img/heartwhite.svg" alt="heart"
+                    /></span>
+                  </div>
+                  <article>
+                    <h2 class="jobheader" contenteditable="true">Law</h2>
+                    <p class="hashedu" contenteditable="true">
+                      #law #legalStudies #contracts #internationalLaws
+                    </p>
+                    <p class="schoolgreen" contenteditable="true">
+                      University of Kerala
+                    </p>
+                  </article>
+                </div>
+                <div id="treeblockedu">
+                  <div class="topblockedu">
+                    <p class="ptop" contenteditable="true">2017</p>
+                    <span class="heart"
+                      ><img src="img/heartwhite.svg" alt="heart"
+                    /></span>
+                  </div>
+                  <article>
+                    <h2 class="jobheader" contenteditable="true">
+                      Graphic design
+                    </h2>
+                    <p class="hashedu" contenteditable="true">
+                      #branding #web #illustration #adobe
+                    </p>
+                    <p class="schoolgreen" contenteditable="true">Coursrea</p>
+                  </article>
+                </div>
+              </div>
+            </section>
+            <div id="lastblocks">
+              <section id="interests">
+                <h1 class="header" contenteditable="true">Interests</h1>
+                <div class="interestsblock">
+                  <div class="tags" contenteditable="true">branding</div>
+                  <div class="tags" contenteditable="true">design</div>
+                  <div class="tags" contenteditable="true">photography</div>
+                  <div class="tags" contenteditable="true">
+                    artificial intelligence
+                  </div>
+                  <div class="tags" contenteditable="true">illustration</div>
+                  <div class="tags" contenteditable="true">typography</div>
+                  <div class="tags" contenteditable="true">social networks</div>
+                  <div class="tags" contenteditable="true">research</div>
+                  <div class="tags" contenteditable="true">dron pilot</div>
+                  <div class="tags" contenteditable="true">games</div>
+                </div>
+              </section>
+              <footer class="footer">
+                <address>
+                  <p id="phrase" contenteditable="true">
+                    Let´s chat! I´m ready to work on excinting projects
+                  </p>
+                  <a
+                    id="contact"
+                    href="mailto:srkarthik.designscape@gmail.com"
+                    contenteditable="true"
+                    >srkarthik.designscape@gmail.com</a
+                  >
+                </address>
+              </footer>
             </div>
           </div>
-        </section>
-      </div>
-      <!--Средний подблок основного блока-->
-      <div id="middle">
-        <!--Блок Experience-->
-        <section id="experience">
-          <h1 class="header" contenteditable="true">Experience</h1>
-          <div id="joblist">
-            <!--Верхний блок job experience-->
-            <div id="lastjob">
-              <div class="jobtop">
-                <p class="ptop" contenteditable="true">Jun. 2023 - Present</p>
-                <div class="mosttag">
-                  <p class="ptop" contenteditable="true">most recent</p>
-                </div>
-              </div>
-              <article class="jobcontent">
-                <div class="jobrole">
-                  <h2 class="jobheader" contenteditable="true">Marketing Manager</h2>
-                  <p class="pjoblast" contenteditable="true">Pankayam&nbsp;&nbsp;|&nbsp;&nbsp;Full-time</p>
-                </div>
-                <div class="jobpoints">
-                  <ul class="uljob" contenteditable="true">
-                    <li>Strategy development and planning of campaigns that promote the business and generate genuine traffic</li>
-                    <li>SEO Content Creation for Blogs, Website, Social media</li>
-                  </ul>
-                </div>
-              </article>
-            </div>
-            <!--Средний блок job experience-->
-            <div id="anyjob">
-              <div class="jobtop">
-                <p class="ptop" contenteditable="true">2017 - Present</p>
-              </div>
-              <article class="jobcontent">
-                <div class="jobrole">
-                  <h2 class="jobheader" contenteditable="true">Graphic / Web designer</h2>
-                  <p class="pjob" contenteditable="true">Freelance</p>
-                </div>
-                <div class="jobpoints">
-                  <ul class="uljob" contenteditable="true">
-                    <li>Development of internal projects from scratch, product design of brands</li>
-                    <li>Landing page, webapps and hybrid apps</li>
-                    <li>Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary.</li>
-                  </ul>
-                </div>
-              </article>
-            </div>
-            <!--Нижний блок job experience-->
-            <div id="anyjob">
-              <div class="jobtop">
-                <p class="ptop" contenteditable="true">Sep. 2021 - Jun. 2023</p>
-              </div>
-              <article class="jobcontent">
-                <div class="jobrole">
-                  <h2 class="jobheader" contenteditable="true">Legal Assistant</h2>
-                  <p class="pjob" contenteditable="true">Law Firm<span class="black">&nbsp;&nbsp;|&nbsp;&nbsp;</span>Intern</p>
-                </div>
-                <div class="jobpoints">
-                  <ul class="uljob"contenteditable="true">
-                    <li>Provide administrative support to lawyer and enhance office effectiveness</li>
-                    <li>Handle communication with clients, witnesses etc.</li>
-                    <li>repare case briefs and summarize depositions, interrogatories and testimony</li>
-                  </ul>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <!--Блок Tools-->
-        <section id="tools">
-          <h1 class="header" contenteditable="true">Tools</h1>
-          <div id="toolsblock">
-            <div class="designtools">
-              <table class="table">
-                <caption class="caption"><div class="toolstag" contenteditable="true">design</div></caption>
-                <tr>
-                  <td><img src="img/figma.svg" alt="figma"></td>
-                  <td><img src="img/photoshop.svg" alt="photoshop"></td>
-                </tr>
-                <tr>
-                  <td><img src="img/illustrator.svg" alt="illustrator"></td>
-                  <td><img src="img/premiere.svg" alt="premiere"></td>
-                </tr>
-                <tr>
-                  <td><img src="img/notion.svg" alt="notion"></td>
-                  <td><img src="img/meet.svg" alt="meet"></td>
-                </tr>
-              </table>
-            </div>
-            <div class="designtools">
-              <table class="table">
-                <caption class="caption"><div class="toolstag" contenteditable="true">no-code</div></caption>
-                <tr>
-                  <td><img src="img/zapier.svg" alt="zapier"></td>
-                  <td><img src="img/webflow.svg" alt="webflow"></td>
-                </tr>
-                <tr>
-                  <td><img src="img/framer.svg" alt="framer"></td>
-                  <td><img src="img/wordpress.svg" alt="wordpress"></td>
-                </tr>
-              </table>
-            </div>
-            <div class="designtools">
-              <table class="table">
-                <caption class="caption"><div class="toolstag" contenteditable="true">artoficial intelligence</div></caption>
-                <tr>
-                  <td><img src="img/chatgpt.svg" alt="chatgpt"></td>
-                  <td><img src="img/copilot.svg" alt="copilot"></td>
-                </tr>
-                <tr>
-                  <td><img src="img/midjourney.svg" alt="midjourney"></td>
-                  <td><img src="img/midjourney3.svg" alt="midjourney3"></td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </section>
-      </div>
-      <!--Нижний подблок основного блока-->
-      <div id="bottom">
-        <section id="education">
-          <h1 class="header" contenteditable="true">Education</h1>
-          <div id="educationblock">
-            <div id="oneblockedu">
-              <div class="topblockedu">
-                <p class="ptop" contenteditable="true">2023</p>
-                <span class="heart"><img src="img/heart.svg" alt="heart"></span>
-              </div>
-              <article>
-                <h2 class="jobheader" contenteditable="true">UI/UX</h2>
-                <p class="pjoblast" contenteditable="true">#UX #UI #research #DesignSystem #Ui #wireframing #figma #Ux</p>
-                <p class="schoolgreen" contenteditable="true">Coursera</p>
-              </article>
-            </div>
-            <div id="twoblockedu">
-              <div class="topblockedu">
-                <p class="ptop" contenteditable="true">2017 - 2022</p>
-                <span class="heart"><img src="img/heartwhite.svg" alt="heart"></span>
-              </div>
-              <article>
-                <h2 class="jobheader" contenteditable="true">Law</h2>
-                <p class="hashedu" contenteditable="true">#law #legalStudies #contracts #internationalLaws</p>
-                <p class="schoolgreen" contenteditable="true">University of Kerala</p>
-              </article>
-            </div>
-            <div id="treeblockedu">
-              <div class="topblockedu">
-                <p class="ptop" contenteditable="true">2017</p>
-                <span class="heart"><img src="img/heartwhite.svg" alt="heart"></span>
-              </div>
-              <article>
-                <h2 class="jobheader" contenteditable="true">Graphic design</h2>
-                <p class="hashedu" contenteditable="true">#branding #web #illustration #adobe</p>
-                <p class="schoolgreen" contenteditable="true">Coursrea</p>
-              </article>
-            </div>
-          </div>
-        </section>
-        <div id="lastblocks">
-          <section id="interests">
-            <h1 class="header" contenteditable="true">Interests</h1>
-            <div class="interestsblock">
-              <div class="tags" contenteditable="true">branding</div>
-              <div class="tags" contenteditable="true">design</div>
-              <div class="tags" contenteditable="true">photography</div>
-              <div class="tags" contenteditable="true">artificial intelligence</div>
-              <div class="tags" contenteditable="true">illustration</div>
-              <div class="tags" contenteditable="true">typography</div>
-              <div class="tags" contenteditable="true">social networks</div>
-              <div class="tags" contenteditable="true">research</div>
-              <div class="tags" contenteditable="true">dron pilot</div>
-              <div class="tags" contenteditable="true">games</div>
-            </div>
-          </section>
-          <footer class="footer">
-            <address>
-              <p id="phrase" contenteditable="true">Let´s chat! I´m ready to work on excinting projects</p>
-              <a id="contact" href="mailto:srkarthik.designscape@gmail.com" contenteditable="true">srkarthik.designscape@gmail.com</a>
-            </address>
-          </footer>
-        </div>
+        </main>
       </div>
     </div>
-    <script type="module" src="./js/main.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
