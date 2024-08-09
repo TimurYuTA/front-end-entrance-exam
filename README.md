@@ -14,4 +14,4 @@
 ## Ссылки
 
 1. [Техническое задание](TOR.md)
-2. [Проект]().
+2. [Проект](https://timuryuta.github.io/front-end-entrance-exam/).
