@@ -1,16 +1,10 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  /* font-synthesis: none; */
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -30,8 +24,10 @@ body {
   margin: 0;
   display: grid;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+}
+
+img {
+  vertical-align: middle;
 }
 
 #cv {
@@ -52,19 +48,20 @@ body {
 #top {
   max-width: 555px;
   width: 100%;
-  max-height: 124px;
   display: flex;
 }
 #img {
   max-width: 124px;
   width: 100%;
-  max-height: 124px;
   border-radius: 12px;
+  display: block;
 }
 #namebox {
   max-width: 124px;
   width: 100%;
-  max-height: 124px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   border-radius: 12px;
   background-color: #f0f0f0;
   margin: 0px 20px;
@@ -73,7 +70,6 @@ body {
 #languages {
   max-width: 267px;
   width: 100%;
-  max-height: 124px;
   border-radius: 12px;
   background-color: #f0f0f0;
   padding: 12px;
@@ -81,7 +77,6 @@ body {
 #langlavel {
   max-width: 243px;
   width: 100%;
-  max-height: 53px;
   margin-top: 16px;
   font-size: 10px;
   display: flex;
@@ -89,26 +84,22 @@ body {
 #landblock {
   max-width: 58px;
   width: 100%;
-  max-height: 50px;
   margin-right: 17px;
 }
 #levelblock {
   max-width: 168px;
   width: 100%;
-  max-height: 53px;
 }
 
 #middle {
   max-width: 555px;
   width: 100%;
-  max-height: 359px;
   margin: 20px 0;
   display: flex;
 }
 #experience {
   max-width: 411px;
   width: 100%;
-  max-height: 359px;
   border-radius: 12px;
   background-color: #f0f0f0;
   padding: 12px;
@@ -117,8 +108,8 @@ body {
 #joblist {
   max-width: 387px;
   width: 100%;
-  max-height: 300px;
   margin-top: 16px;
+  line-height: 1.4;
 }
 #lastjob {
   max-width: 387px;
@@ -132,7 +123,6 @@ body {
 #tools {
   max-width: 124px;
   width: 100%;
-  max-height: 359px;
   border-radius: 12px;
   background-color: #f0f0f0;
   padding: 12px;
@@ -146,13 +136,11 @@ body {
 #bottom {
   max-width: 555px;
   width: 100%;
-  max-height: 289px;
   display: flex;
 }
 #education {
   max-width: 268px;
   width: 100%;
-  max-height: 289px;
   border-radius: 12px;
   background-color: #f0f0f0;
   margin-right: 20px;
@@ -161,7 +149,6 @@ body {
 #interests {
   max-width: 267px;
   width: 100%;
-  max-height: 177px;
   border-radius: 12px;
   background-color: #f0f0f0;
   margin-bottom: 20px;
@@ -170,15 +157,15 @@ body {
 #educationblock {
   max-width: 248px;
   width: 100%;
-  max-height: 228px;
   display: grid;
+  height: auto;
   grid-template-columns: repeat(2, 116px);
   gap: 12px;
 }
 #oneblockedu {
   max-width: 116px;
   width: 100%;
-  max-height: 120px;
+  height: fit-content;
   padding: 8px;
   margin-top: 16px;
   border-radius: 10px;
@@ -188,7 +175,7 @@ body {
 #twoblockedu {
   max-width: 116px;
   width: 100%;
-  max-height: 108px;
+  height: fit-content;
   padding: 8px;
   margin-top: 16px;
   border-radius: 10px;
@@ -198,7 +185,7 @@ body {
 #treeblockedu {
   max-width: 116px;
   width: 100%;
-  max-height: 96px;
+  height: fit-content;
   padding: 8px;
   border-radius: 10px;
   background-color: #ffffff;
@@ -207,14 +194,13 @@ body {
 #lastblocks {
   max-width: 267px;
   width: 100%;
-  max-height: 289px;
 }
 #phrase {
   font-size: 14px;
   color: #ffffff;
   margin: 0;
   font-style: normal;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 #contact {
   font-size: 10px;
@@ -226,8 +212,10 @@ body {
 
 div.greating {
   font-size: 10px;
-  margin-bottom: 46px;
-  max-height: 96px;
+}
+.space {
+  content: "";
+  margin-top: auto;
 }
 div.name {
   font-size: 14px;
@@ -238,9 +226,14 @@ div.role {
   font-size: 12px;
   color: #5c5c5c;
 }
+.zero {
+  margin: 0;
+  padding: 0;
+}
 
 .header {
   font-size: 14px;
+  font-weight: 500;
   margin: 0;
 }
 .p {
@@ -283,7 +276,6 @@ div.role {
 .jobtop {
   max-width: 371px;
   width: 100%;
-  max-height: 16px;
   font-size: 8px;
   display: flex;
 }
@@ -311,11 +303,13 @@ div.role {
 }
 .jobheader {
   font-size: 10px;
+  font-weight: 500;
   margin: 0;
 }
 .pjoblast {
   font-size: 8px;
   font-weight: 400;
+  line-height: 1.4;
   margin: 0;
   color: #ebf9f2;
 }
@@ -342,10 +336,9 @@ div.role {
 .designtools {
   max-width: 76px;
   width: 100%;
-  max-height: 111.48px;
   border-radius: 6px;
   padding: 0px 4px 11px 4px;
-  margin-bottom: 12px;
+  margin-top: 12px;
   background-color: #ffffff;
 }
 .table {
@@ -371,31 +364,28 @@ div.role {
 .topblockedu {
   max-width: 100px;
   width: 100%;
-  max-height: 15px;
   font-size: 10px;
   margin-bottom: 8px;
-  vertical-align: middle;
   display: flex;
 }
 .heart {
-  margin-top: 4px;
   margin-left: auto;
 }
 .schoolgreen {
   font-size: 8px;
   font-weight: 400;
-  margin-top: 8px;
+  margin: 8px 0 0 0;
 }
 .hashedu {
   font-size: 8px;
   font-weight: 400;
+  line-height: 1.4;
   margin: 0;
   color: #149063;
 }
 .interestsblock {
   max-width: 243px;
   width: 100%;
-  max-height: 116px;
   margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
@@ -413,7 +403,6 @@ div.role {
 .footer {
   max-width: 267px;
   width: 100%;
-  max-height: 92px;
   border-radius: 12px;
   padding: 12px;
   background-color: #000000;

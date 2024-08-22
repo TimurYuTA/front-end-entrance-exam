@@ -3,7 +3,7 @@
 function generatePDF() {
   const doc = {
     filename: "cv.pdf",
-    margin: [6, 5, 5, 5],
+    margin: [6, 7, 0, 2],
     html2canvas: { width: 570 },
     jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
   };
