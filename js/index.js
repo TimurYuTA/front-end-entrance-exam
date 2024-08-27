@@ -1,4 +1,4 @@
-// ===== Конвертация страницы в PDF ====================
+// ===== Converting a page to PDF =========================================
 
 function generatePDF() {
   const doc = {
@@ -13,7 +13,7 @@ function generatePDF() {
 }
 
 
-// ===== Ripple эффект =================================
+// ===== Ripple effect ====================================================
 
 document.onclick = () => applyCursorRippleEffect(event); 
 
@@ -29,3 +29,14 @@ function applyCursorRippleEffect(e) {
   ripple.style.animation = "ripple-effect .4s  linear";
   ripple.onanimationend = () => document.body.removeChild(ripple);
 }
+
+
+// ===== Saving changes in sessionStorage =================================
+
+document.addEventListener('input', e => {
+  console.log(sessionStorage);
+  sessionStorage.setItem(e.target.getAttribute('name'), e.target.innerHTML);
+  console.log(sessionStorage);
+});
+
+
