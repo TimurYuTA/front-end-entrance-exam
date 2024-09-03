@@ -1,5 +1,4 @@
 // ===== Converting a page to PDF =========================================
-
 function generatePDF() {
   const doc = {
     filename: "cv.pdf",
@@ -14,7 +13,6 @@ function generatePDF() {
 
 
 // ===== Ripple effect ====================================================
-
 document.onclick = () => applyCursorRippleEffect(event); 
 
 function applyCursorRippleEffect(e) {
@@ -31,12 +29,26 @@ function applyCursorRippleEffect(e) {
 }
 
 
-// ===== Saving changes in sessionStorage =================================
+// ===== Saving changes in Storage =================================
+document.addEventListener('DOMContentLoaded', function () {
+  let changeContents = {};
+  const memory = sessionStorage;
 
-document.addEventListener('input', e => {
-  console.log(sessionStorage);
-  sessionStorage.setItem(e.target.getAttribute('name'), e.target.innerHTML);
-  console.log(sessionStorage);
-});
+  document.addEventListener('input', function(event) {
+    changeContents[event.target.getAttribute('id')] = event.target.innerHTML;
+    memory.setItem('changeContents', JSON.stringify(changeContents));
+  });
+
+  if (memory.getItem('changeContents')) {
+    changeContents = JSON.parse(memory.getItem('changeContents'));
+    for (let key in changeContents) {
+      document.getElementById(key).innerHTML = changeContents[key];
+    }
+  }
+})
+
+
+
+
 
 
