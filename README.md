@@ -2,7 +2,7 @@
 
 ## Description
 
-A web page with a resume completed according to the terms of referenc.
+A web page with a resume completed according to the terms of reference.
 
 ## Functionality
 
