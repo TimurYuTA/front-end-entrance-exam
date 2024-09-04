@@ -13,20 +13,22 @@ function generatePDF() {
 
 
 // ===== Ripple effect ====================================================
-document.onclick = () => applyCursorRippleEffect(event); 
+let clickElements = document.querySelectorAll('button, [contenteditable="true"]');
 
-function applyCursorRippleEffect(e) {
-  const ripple = document.createElement("div");
+clickElements.forEach(function (element) {
+  element.addEventListener('click', function (event) {
+    const ripple = document.createElement("div");
 
-  ripple.className = "ripple";
-  document.body.appendChild(ripple);
-
-  ripple.style.left = `${e.clientX}px`;
-  ripple.style.top = `${e.clientY}px`; 
-
-  ripple.style.animation = "ripple-effect .4s  linear";
-  ripple.onanimationend = () => document.body.removeChild(ripple);
-}
+    ripple.className = "ripple";
+    document.body.appendChild(ripple);
+  
+    ripple.style.left = `${event.clientX}px`;
+    ripple.style.top = `${event.clientY}px`; 
+  
+    ripple.style.animation = "ripple-effect .4s  linear";
+    ripple.onanimationend = () => document.body.removeChild(ripple);
+  });
+})
 
 
 // ===== Saving changes in Storage =================================
@@ -46,9 +48,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 })
-
-
-
-
-
-
