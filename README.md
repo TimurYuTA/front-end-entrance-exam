@@ -1,17 +1,24 @@
-# Проект для Frontend разработчика
+# The Project for a Frontend developer
 
-## Описание
+## Description
 
-Веб-страница с резюме, выполненная по техническому заданию. Страница имеет возможность изменять текст, автоматически сохраняя изменения до обновления страницы, и предоставляет кнопку для скачивания резюме в формате PDF.
+A web page with a resume completed according to the terms of referenc.
 
-## Используемые технологии
+## Functionality
+
+* Changing the text of the page.
+* Automatic saving of the entered data before closing the page.
+* Implemented a button for downloading a resume in PDF format.
+* Material Wave (ripple) effect
+
+## Technologies used
 
 - HTML
 - CSS
 - JavaScript
-- html2pdf.js - для конвертации веб-страницы в PDF файл.
+- html2pdf.js
 
-## Ссылки
+## Links
 
-1. [Техническое задание](TOR.md)
-2. [Проект](https://timuryuta.github.io/front-end-entrance-exam/).
+1. [Terms Of Referenc](TOR.md)
+2. [Project](https://timuryuta.github.io/front-end-entrance-exam/).
