@@ -20,5 +20,5 @@ A web page with a resume completed according to the terms of referenc.
 
 ## Links
 
-1. [Terms Of Referenc](TOR.md)
+1. [Terms Of Reference](TOR.md)
 2. [Project](https://timuryuta.github.io/front-end-entrance-exam/).
