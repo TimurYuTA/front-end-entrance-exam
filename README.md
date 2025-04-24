@@ -9,7 +9,7 @@ A web page with a resume completed according to the terms of reference.
 * Changing the text of the page.
 * Automatic saving of the entered data before closing the page.
 * Implemented a button for downloading a resume in PDF format.
-* Material Wave (ripple) effect
+* Material Wave (ripple) effect.
 
 ## Technologies used
 
@@ -20,5 +20,5 @@ A web page with a resume completed according to the terms of reference.
 
 ## Links
 
-1. [Terms Of Reference](TOR.md)
+1. [Terms Of Reference](TOR.md).
 2. [Project](https://timuryuta.github.io/front-end-entrance-exam/).
