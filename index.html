@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,53 +13,65 @@
   </head>
 
   <body>
-    
     <!-- Header line with Button to download -->
     <header>
       <div class="headerarea">
-        <button onclick="generatePDF()">Download</button>
+        <button class="btn" onclick="generatePDF()">Download</button>
         <div class="line"></div>
       </div>
     </header>
 
     <!-- Resume -->
     <div class="cv">
-      <div id="contentPdf" class="contentPdf">
-
+      <div class="contentPdf" id="contentPdf">
         <main>
-
           <!-- Top blocks of Resume -->
-          <div id="top">
-
+          <div class="top">
             <!-- Foto -->
-            <div id="img">
+            <div class="foto">
               <img src="img/profileImg.jpg" alt="foto" />
             </div>
 
             <!-- Name -->
-            <div id="namebox">
+            <div class="namebox">
               <div class="greating">
-                <p class="zero" contenteditable="true" id="greating">Hello 👋🏻 I’m</p>
+                <p class="zero" contenteditable="true" id="greating">
+                  Hello 👋🏻 I’m
+                </p>
               </div>
+
               <div class="space"></div>
+
               <div class="name">
                 <p class="zero" contenteditable="true" id="name">Karthik SR</p>
               </div>
+
               <div class="role">
-                <p class="zero" contenteditable="true" id="role">UX/UI Designer</p>
+                <p class="zero" contenteditable="true" id="role">
+                  UX/UI Designer
+                </p>
               </div>
             </div>
 
             <!-- Languages -->
-            <section id="languages">
-              <h1 class="header" contenteditable="true" id="languagesTitle">Languages</h1>
-              <div id="langlavel">
-                <div id="landblock">
-                  <p class="p" contenteditable="true" id="languageFirst">English</p>
-                  <p class="pmid" contenteditable="true" id="languageSecond">Malayalam</p>
-                  <p class="p" contenteditable="true" id="languageThird">Hindi</p>
+            <section class="languages">
+              <h1 class="header" contenteditable="true" id="languagesTitle">
+                Languages
+              </h1>
+              <div class="langlavel">
+                <div class="langtextblock">
+                  <p class="p" contenteditable="true" id="languageFirst">
+                    English
+                  </p>
+                  <p class="pmiddle" contenteditable="true" id="languageSecond">
+                    Malayalam
+                  </p>
+                  <p class="p" contenteditable="true" id="languageThird">
+                    Hindi
+                  </p>
                 </div>
-                <div id="levelblock">
+
+                <div class="langlevelblock">
                   <div class="level"></div>
                   <div class="level"></div>
                   <div class="levelhindi"></div>
@@ -70,34 +81,50 @@
           </div>
 
           <!-- Middle blocks of Resume -->
-          <div id="middle">
-
+          <div class="middle">
             <!-- Experience -->
-            <section id="experience">
-              <h1 class="header" contenteditable="true" id="experienceTitle">Experience</h1>
-              <div id="joblist">
-
+            <section class="experience">
+              <h1 class="header" contenteditable="true" id="experienceTitle">
+                Experience
+              </h1>
+              <div class="joblist">
                 <!-- Top of Experience - Last job -->
-                <div id="lastjob">
+                <div class="lastjob">
                   <div class="jobtop">
                     <p class="ptop" contenteditable="true" id="jobTopDate">
                       Jun. 2023 - Present
                     </p>
                     <div class="mosttag">
-                      <p class="ptop" contenteditable="true" id="jobTopMark">most recent</p>
+                      <p class="ptop" contenteditable="true" id="jobTopMark">
+                        most recent
+                      </p>
                     </div>
                   </div>
+
                   <article class="jobcontent">
                     <div class="jobrole">
-                      <h2 class="jobheader" contenteditable="true" id="jobTopRole">
+                      <h2
+                        class="jobheader"
+                        contenteditable="true"
+                        id="jobTopRole"
+                      >
                         Marketing Manager
                       </h2>
-                      <p class="pjoblast" contenteditable="true" id="jobTopLoad">
+                      <p
+                        class="pjoblast"
+                        contenteditable="true"
+                        id="jobTopLoad"
+                      >
                         Pankayam&nbsp;&nbsp;|&nbsp;&nbsp;Full-time
                       </p>
                     </div>
+
                     <div class="jobpoints">
-                      <ul class="uljob" contenteditable="true" id="jobTopContent">
+                      <ul
+                        class="uljob"
+                        contenteditable="true"
+                        id="jobTopContent"
+                      >
                         <li>
                           Strategy development and planning of campaigns that
                           promote the business and generate genuine traffic
@@ -113,17 +140,31 @@
                 <!-- Middle of Experience - Second job -->
                 <div class="anyjob">
                   <div class="jobtop">
-                    <p class="ptop" contenteditable="true" id="jobMiddleDate">2017 - Present</p>
+                    <p class="ptop" contenteditable="true" id="jobMiddleDate">
+                      2017 - Present
+                    </p>
                   </div>
+
                   <article class="jobcontent">
                     <div class="jobrole">
-                      <h2 class="jobheader" contenteditable="true" id="jobMiddleRole">
+                      <h2
+                        class="jobheader"
+                        contenteditable="true"
+                        id="jobMiddleRole"
+                      >
                         Graphic / Web designer
                       </h2>
-                      <p class="pjob" contenteditable="true" id="jobMiddleLoad">Freelance</p>
+                      <p class="pjob" contenteditable="true" id="jobMiddleLoad">
+                        Freelance
+                      </p>
                     </div>
+
                     <div class="jobpoints">
-                      <ul class="uljob" contenteditable="true" id="jobMiddleContent">
+                      <ul
+                        class="uljob"
+                        contenteditable="true"
+                        id="jobMiddleContent"
+                      >
                         <li>
                           Development of internal projects from scratch, product
                           design of brands
@@ -146,9 +187,14 @@
                       Sep. 2021 - Jun. 2023
                     </p>
                   </div>
+
                   <article class="jobcontent">
                     <div class="jobrole">
-                      <h2 class="jobheader" contenteditable="true" id="jobBottomRole">
+                      <h2
+                        class="jobheader"
+                        contenteditable="true"
+                        id="jobBottomRole"
+                      >
                         Legal Assistant
                       </h2>
                       <p class="pjob" contenteditable="true" id="jobBottomLoad">
@@ -157,8 +203,13 @@
                         >Intern
                       </p>
                     </div>
+
                     <div class="jobpoints">
-                      <ul class="uljob" contenteditable="true" id="jobBottomContent">
+                      <ul
+                        class="uljob"
+                        contenteditable="true"
+                        id="jobBottomContent"
+                      >
                         <li>
                           Provide administrative support to lawyer and enhance
                           office effectiveness
@@ -178,28 +229,51 @@
             </section>
 
             <!-- Tools -->
-            <section id="tools">
-              <h1 class="header" contenteditable="true" id="ToolsTitle">Tools</h1>
-              <div id="toolsblock">
+            <section class="tools">
+              <h1 class="header" contenteditable="true" id="ToolsTitle">
+                Tools
+              </h1>
 
+              <div class="toolsblock">
                 <!-- Top of Tools - design -->
                 <div class="designtools">
                   <table class="table">
                     <caption class="caption">
-                      <div class="toolstag" contenteditable="true" id="ToolsBlockTop">design</div>
+                      <div
+                        class="toolstag"
+                        contenteditable="true"
+                        id="ToolsBlockTop"
+                      >
+                        design
+                      </div>
                     </caption>
                     <tr>
                       <td><img src="img/logo/logoFigma.svg" alt="figma" /></td>
-                      <td><img src="img/logo/logoAdobePhotoshop.svg" alt="photoshop" /></td>
+                      <td>
+                        <img
+                          src="img/logo/logoAdobePhotoshop.svg"
+                          alt="photoshop"
+                        />
+                      </td>
                     </tr>
                     <tr>
                       <td>
-                        <img src="img/logo/logoAdobeIllustrator.svg" alt="illustrator" />
+                        <img
+                          src="img/logo/logoAdobeIllustrator.svg"
+                          alt="illustrator"
+                        />
                       </td>
-                      <td><img src="img/logo/logoAdobePremiere.svg" alt="premiere" /></td>
+                      <td>
+                        <img
+                          src="img/logo/logoAdobePremiere.svg"
+                          alt="premiere"
+                        />
+                      </td>
                     </tr>
                     <tr>
-                      <td><img src="img/logo/logoNotion.svg" alt="notion" /></td>
+                      <td>
+                        <img src="img/logo/logoNotion.svg" alt="notion" />
+                      </td>
                       <td><img src="img/logo/logoMeet.svg" alt="meet" /></td>
                     </tr>
                   </table>
@@ -209,15 +283,29 @@
                 <div class="designtools">
                   <table class="table">
                     <caption class="caption">
-                      <div class="toolstag" contenteditable="true" id="ToolsBlockMiddle">no-code</div>
+                      <div
+                        class="toolstag"
+                        contenteditable="true"
+                        id="ToolsBlockMiddle"
+                      >
+                        no-code
+                      </div>
                     </caption>
                     <tr>
-                      <td><img src="img/logo/logoZapìer.svg" alt="zapier" /></td>
-                      <td><img src="img/logo/logoWebflow.svg" alt="webflow" /></td>
+                      <td>
+                        <img src="img/logo/logoZapìer.svg" alt="zapier" />
+                      </td>
+                      <td>
+                        <img src="img/logo/logoWebflow.svg" alt="webflow" />
+                      </td>
                     </tr>
                     <tr>
-                      <td><img src="img/logo/logoFramer.svg" alt="framer" /></td>
-                      <td><img src="img/logo/logoWordpress.svg" alt="wordpress" /></td>
+                      <td>
+                        <img src="img/logo/logoFramer.svg" alt="framer" />
+                      </td>
+                      <td>
+                        <img src="img/logo/logoWordpress.svg" alt="wordpress" />
+                      </td>
                     </tr>
                   </table>
                 </div>
@@ -226,18 +314,34 @@
                 <div class="designtools">
                   <table class="table">
                     <caption class="caption">
-                      <div class="toolstag" contenteditable="true" id="ToolsBlockBottom">
+                      <div
+                        class="toolstag"
+                        contenteditable="true"
+                        id="ToolsBlockBottom"
+                      >
                         artoficial intelligence
                       </div>
                     </caption>
                     <tr>
-                      <td><img src="img/logo/logoChatGPT.svg" alt="chatgpt" /></td>
-                      <td><img src="img/logo/logoCopilot.svg" alt="copilot" /></td>
+                      <td>
+                        <img src="img/logo/logoChatGPT.svg" alt="chatgpt" />
+                      </td>
+                      <td>
+                        <img src="img/logo/logoCopilot.svg" alt="copilot" />
+                      </td>
                     </tr>
                     <tr>
-                      <td><img src="img/logo/logoMidjourney1.svg" alt="midjourney" /></td>
                       <td>
-                        <img src="img/logo/logoMidjourney3.svg" alt="midjourney3" />
+                        <img
+                          src="img/logo/logoMidjourney1.svg"
+                          alt="midjourney"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="img/logo/logoMidjourney3.svg"
+                          alt="midjourney3"
+                        />
                       </td>
                     </tr>
                   </table>
@@ -247,100 +351,188 @@
           </div>
 
           <!-- Bottom blocks of Resume -->
-          <div id="bottom">
-
+          <div class="bottom">
             <!-- Education -->
-            <section id="education">
-              <h1 class="header" contenteditable="true" id="educationTitle">Education</h1>
-              <div id="educationblock">
+            <section class="education">
+              <h1 class="header" contenteditable="true" id="educationTitle">
+                Education
+              </h1>
 
+              <div class="educationblock">
                 <!-- Top-left block of Education -->
-                <div id="oneblockedu">
+                <div class="oneblockedu">
                   <div class="topblockedu">
-                    <p class="zero" contenteditable="true" id="educationDateTop">2023</p>
+                    <p
+                      class="zero"
+                      contenteditable="true"
+                      id="educationDateTop"
+                    >
+                      2023
+                    </p>
                     <span class="heart"
                       ><img src="img/logo/HeartYellow.svg" alt="heart"
                     /></span>
                   </div>
+
                   <article>
-                    <h2 class="jobheader" contenteditable="true" id="educationRoleTop">UI/UX</h2>
-                    <p class="pjoblast" contenteditable="true" id="educationTagsTop">
+                    <h2
+                      class="jobheader"
+                      contenteditable="true"
+                      id="educationRoleTop"
+                    >
+                      UI/UX
+                    </h2>
+                    <p
+                      class="pjoblast"
+                      contenteditable="true"
+                      id="educationTagsTop"
+                    >
                       #UX #UI #research #DesignSystem #Ui #wireframing #figma
                       #Ux
                     </p>
-                    <p class="schoolgreen" contenteditable="true" id="educationSchoolTop">Coursera</p>
+                    <p
+                      class="schoolgreen"
+                      contenteditable="true"
+                      id="educationSchoolTop"
+                    >
+                      Coursera
+                    </p>
                   </article>
                 </div>
 
                 <!-- Top-right block of Education -->
-                <div id="twoblockedu">
+                <div class="twoblockedu">
                   <div class="topblockedu">
-                    <p class="zero" contenteditable="true" id="educationDateMiddle">2017 - 2022</p>
+                    <p
+                      class="zero"
+                      contenteditable="true"
+                      id="educationDateMiddle"
+                    >
+                      2017 - 2022
+                    </p>
                     <span class="heart"
                       ><img src="img/logo/HeartWhite.svg" alt="heart"
                     /></span>
                   </div>
+
                   <article>
-                    <h2 class="jobheader" contenteditable="true" id="educationRoleMiddle">Law</h2>
-                    <p class="hashedu" contenteditable="true" id="educationTagsMiddle">
+                    <h2
+                      class="jobheader"
+                      contenteditable="true"
+                      id="educationRoleMiddle"
+                    >
+                      Law
+                    </h2>
+                    <p
+                      class="hashedu"
+                      contenteditable="true"
+                      id="educationTagsMiddle"
+                    >
                       #law #legalStudies #contracts #internationalLaws
                     </p>
-                    <p class="schoolgreen" contenteditable="true" id="educationSchoolMiddle">
+                    <p
+                      class="schoolgreen"
+                      contenteditable="true"
+                      id="educationSchoolMiddle"
+                    >
                       University of Kerala
                     </p>
                   </article>
                 </div>
 
                 <!-- Bottom block of Education -->
-                <div id="treeblockedu">
+                <div class="treeblockedu">
                   <div class="topblockedu">
-                    <p class="zero" contenteditable="true" id="educationDateBottom">2017</p>
+                    <p
+                      class="zero"
+                      contenteditable="true"
+                      id="educationDateBottom"
+                    >
+                      2017
+                    </p>
                     <span class="heart"
                       ><img src="img/logo/HeartWhite.svg" alt="heart"
                     /></span>
                   </div>
+
                   <article>
-                    <h2 class="jobheader" contenteditable="true" id="educationRoleBottom">
+                    <h2
+                      class="jobheader"
+                      contenteditable="true"
+                      id="educationRoleBottom"
+                    >
                       Graphic design
                     </h2>
-                    <p class="hashedu" contenteditable="true" id="educationTagsBottom">
+                    <p
+                      class="hashedu"
+                      contenteditable="true"
+                      id="educationTagsBottom"
+                    >
                       #branding #web #illustration #adobe
                     </p>
-                    <p class="schoolgreen" contenteditable="true" id="educationSchoolBottom">Coursrea</p>
+                    <p
+                      class="schoolgreen"
+                      contenteditable="true"
+                      id="educationSchoolBottom"
+                    >
+                      Coursrea
+                    </p>
                   </article>
                 </div>
               </div>
             </section>
 
             <!-- Right blocks of Bottom blocks of Resume -->
-            <div id="lastblocks">
-
+            <div class="lastblocks">
               <!-- Interests -->
-              <section id="interests">
-                <h1 class="header" contenteditable="true" id="interestsTitle">Interests</h1>
+              <section class="interests">
+                <h1 class="header" contenteditable="true" id="interestsTitle">
+                  Interests
+                </h1>
+
                 <div class="interestsblock">
-                  <div class="tags" contenteditable="true" id="interestOne">branding</div>
-                  <div class="tags" contenteditable="true" id="interestTwo">design</div>
-                  <div class="tags" contenteditable="true" id="interestThree">photography</div>
+                  <div class="tags" contenteditable="true" id="interestOne">
+                    branding
+                  </div>
+                  <div class="tags" contenteditable="true" id="interestTwo">
+                    design
+                  </div>
+                  <div class="tags" contenteditable="true" id="interestThree">
+                    photography
+                  </div>
                   <div class="tags" contenteditable="true" id="interestFour">
                     artificial intelligence
                   </div>
-                  <div class="tags" contenteditable="true" id="interestFive">illustration</div>
-                  <div class="tags" contenteditable="true" id="interestSix">typography</div>
-                  <div class="tags" contenteditable="true" id="interestSeven">social networks</div>
-                  <div class="tags" contenteditable="true" id="interestEight">research</div>
-                  <div class="tags" contenteditable="true" id="interestNine">dron pilot</div>
-                  <div class="tags" contenteditable="true" id="interestTen">games</div>
+                  <div class="tags" contenteditable="true" id="interestFive">
+                    illustration
+                  </div>
+                  <div class="tags" contenteditable="true" id="interestSix">
+                    typography
+                  </div>
+                  <div class="tags" contenteditable="true" id="interestSeven">
+                    social networks
+                  </div>
+                  <div class="tags" contenteditable="true" id="interestEight">
+                    research
+                  </div>
+                  <div class="tags" contenteditable="true" id="interestNine">
+                    dron pilot
+                  </div>
+                  <div class="tags" contenteditable="true" id="interestTen">
+                    games
+                  </div>
                 </div>
               </section>
 
               <!-- Block with contact -->
               <footer class="footer">
-                <p id="phrase" contenteditable="true">
+                <p class="phrase" id="phrase" contenteditable="true">
                   Let´s chat! I´m ready to work on excinting projects
                 </p>
+
                 <address>
                   <a
+                    class="contact"
                     id="contact"
                     href="mailto:srkarthik.designscape@gmail.com"
                     contenteditable="true"
@@ -348,18 +540,13 @@
                   >
                 </address>
               </footer>
-
             </div>
-
           </div>
-
         </main>
-
       </div>
     </div>
 
     <!-- Scripts -->
     <script src="js/index.js"></script>
-
   </body>
 </html>
