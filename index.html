@@ -14,7 +14,8 @@
   </head>
 
   <body>
-
+    
+    <!-- Header line with Button to download -->
     <header>
       <div class="headerarea">
         <button onclick="generatePDF()">Download</button>
@@ -22,16 +23,21 @@
       </div>
     </header>
 
-    <div id="cv">
-      <div id="contentPdf">
+    <!-- Resume -->
+    <div class="cv">
+      <div id="contentPdf" class="contentPdf">
+
         <main>
 
+          <!-- Top blocks of Resume -->
           <div id="top">
 
+            <!-- Foto -->
             <div id="img">
               <img src="img/profileImg.jpg" alt="foto" />
             </div>
 
+            <!-- Name -->
             <div id="namebox">
               <div class="greating">
                 <p class="zero" contenteditable="true" id="greating">Hello 👋🏻 I’m</p>
@@ -45,6 +51,7 @@
               </div>
             </div>
 
+            <!-- Languages -->
             <section id="languages">
               <h1 class="header" contenteditable="true" id="languagesTitle">Languages</h1>
               <div id="langlavel">
@@ -60,14 +67,17 @@
                 </div>
               </div>
             </section>
-
           </div>
 
+          <!-- Middle blocks of Resume -->
           <div id="middle">
 
+            <!-- Experience -->
             <section id="experience">
               <h1 class="header" contenteditable="true" id="experienceTitle">Experience</h1>
               <div id="joblist">
+
+                <!-- Top of Experience - Last job -->
                 <div id="lastjob">
                   <div class="jobtop">
                     <p class="ptop" contenteditable="true" id="jobTopDate">
@@ -99,6 +109,8 @@
                     </div>
                   </article>
                 </div>
+
+                <!-- Middle of Experience - Second job -->
                 <div class="anyjob">
                   <div class="jobtop">
                     <p class="ptop" contenteditable="true" id="jobMiddleDate">2017 - Present</p>
@@ -126,6 +138,8 @@
                     </div>
                   </article>
                 </div>
+
+                <!-- Bottom of Experience - First job -->
                 <div class="anyjob">
                   <div class="jobtop">
                     <p class="ptop" contenteditable="true" id="jobBottomDate">
@@ -163,9 +177,12 @@
               </div>
             </section>
 
+            <!-- Tools -->
             <section id="tools">
               <h1 class="header" contenteditable="true" id="ToolsTitle">Tools</h1>
               <div id="toolsblock">
+
+                <!-- Top of Tools - design -->
                 <div class="designtools">
                   <table class="table">
                     <caption class="caption">
@@ -187,6 +204,8 @@
                     </tr>
                   </table>
                 </div>
+
+                <!-- Middle of Tools - no-code -->
                 <div class="designtools">
                   <table class="table">
                     <caption class="caption">
@@ -202,6 +221,8 @@
                     </tr>
                   </table>
                 </div>
+
+                <!-- Bottom of Tools - artoficial intelligence -->
                 <div class="designtools">
                   <table class="table">
                     <caption class="caption">
@@ -223,14 +244,17 @@
                 </div>
               </div>
             </section>
-
           </div>
 
+          <!-- Bottom blocks of Resume -->
           <div id="bottom">
 
+            <!-- Education -->
             <section id="education">
               <h1 class="header" contenteditable="true" id="educationTitle">Education</h1>
               <div id="educationblock">
+
+                <!-- Top-left block of Education -->
                 <div id="oneblockedu">
                   <div class="topblockedu">
                     <p class="zero" contenteditable="true" id="educationDateTop">2023</p>
@@ -247,6 +271,8 @@
                     <p class="schoolgreen" contenteditable="true" id="educationSchoolTop">Coursera</p>
                   </article>
                 </div>
+
+                <!-- Top-right block of Education -->
                 <div id="twoblockedu">
                   <div class="topblockedu">
                     <p class="zero" contenteditable="true" id="educationDateMiddle">2017 - 2022</p>
@@ -264,6 +290,8 @@
                     </p>
                   </article>
                 </div>
+
+                <!-- Bottom block of Education -->
                 <div id="treeblockedu">
                   <div class="topblockedu">
                     <p class="zero" contenteditable="true" id="educationDateBottom">2017</p>
@@ -284,8 +312,10 @@
               </div>
             </section>
 
+            <!-- Right blocks of Bottom blocks of Resume -->
             <div id="lastblocks">
 
+              <!-- Interests -->
               <section id="interests">
                 <h1 class="header" contenteditable="true" id="interestsTitle">Interests</h1>
                 <div class="interestsblock">
@@ -304,6 +334,7 @@
                 </div>
               </section>
 
+              <!-- Block with contact -->
               <footer class="footer">
                 <p id="phrase" contenteditable="true">
                   Let´s chat! I´m ready to work on excinting projects
@@ -319,11 +350,16 @@
               </footer>
 
             </div>
+
           </div>
 
         </main>
+
       </div>
     </div>
+
+    <!-- Scripts -->
     <script src="js/index.js"></script>
+
   </body>
 </html>
